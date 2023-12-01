@@ -1,0 +1,78 @@
+/* 
+    ==============================
+            table of contents
+    ==============================
+
+    1. Left Section
+    2. Right Section == animation
+    
+*/
+
+/* 
+    ==============================
+            Left Section
+    ==============================
+    =
+ */
+
+section.hero {
+    margin-top: 3rem;
+
+}
+section.hero .left-section {
+    flex-grow: 1;
+}
+.left-section .parent-avatar {
+    align-items: flex-end;
+    gap: 0.6em;
+}
+.left-section .avatar {
+    width: 88px;
+    border: 1px solid orangered;
+    border-radius: 50%;
+}
+.left-section .icon-verified {
+    color: var(--blue);
+    margin-bottom: 0.3em;
+}
+
+.hero .left-section h1 {
+    font-size: 2.85rem;
+    line-height: 1.2;
+    margin: 25px 0;
+    color: var(--title);
+
+}
+.hero .left-section p {
+    color: var(--subtitle);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 32px;
+
+}
+.hero .left-section .icons {
+    gap : 1.5em;
+    font-size: 1.3rem;
+    height: 20px;
+}
+.hero .left-section .icons .icon {
+    color: var(--subtitle);
+}
+.hero .left-section .icons .icon:hover {
+    font-size: 1.4rem;
+    transition: .3s;
+    cursor: pointer;
+    color: var(--icon-hover);
+}
+/* 
+    ==============================
+            Right Section == animation
+    ==============================
+    =
+ */
+@media (max-width: 700px) {
+    
+    .animation {
+       display: none;
+    }
+}

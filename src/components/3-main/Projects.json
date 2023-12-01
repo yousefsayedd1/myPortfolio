@@ -1,0 +1,30 @@
+[{
+    "name" : "Tenzies",
+    "imagePath" : "assets/tenzies.png",
+    "subtitle" : "This React application implements a dice game where players can roll and hold dice to achieve 'tenzies' signified by all held dice showing the same value. Components include Die for rendering dice, Header for game info, and Button for rolling. The code uses React hooks and conditional rendering, with a Confetti effect upon winning.",
+    "liveLike" : "https://yousefsayedd1.github.io/tenzies-game/",
+    "githubLink" : "https://github.com/yousefsayedd1/tenzies-game",
+    "categorys": ["All Projects","React & MUI", "HTML & CSS"]
+},{
+    "name" : "Color Scheme Generator",
+    "imagePath" : "assets/ColorSchemeGenerator.png",
+    "subtitle" : "This Project is a simple web application that dynamically fetches a color scheme based on user input (color and scheme type) using thecolorapi.com. Upon a button click, it updates the background colors of five div elements and displays their corresponding color codes.",
+    "liveLike" : "https://yousefsayedd1.github.io/ColorSchemeGenerator/",
+    "githubLink" : "https://github.com/yousefsayedd1/ColorSchemeGenerator",
+    "categorys": ["All Projects","JavaScript & API", "HTML & CSS"]
+},{
+    "name" : "myGroceryList",
+    "imagePath" : "assets/myGroceryList.png",
+    "subtitle" : "This Project is a simple web application that utilizes Firebase Realtime Database to create and manage a shopping list. The project is written in JavaScript and relies on the Firebase",
+    "liveLike" : "https://yousefsayedd1.github.io/myGroceryList/",
+    "githubLink" : "https://github.com/yousefsayedd1/myGroceryList",
+    "categorys": ["All Projects","DataBase", "HTML & CSS"]
+},
+{
+    "name" : "memePicker",
+    "imagePath" : "assets/memePicker.png",
+    "subtitle" : "This Project is a delightful web project that showcases a collection of cat images based on different emotions. Users can interact with the gallery, selecting specific emotions to view corresponding cat images. The project incorporates a user-friendly interface with radio buttons for emotion selection, a button to fetch cat images, and a modal for an immersive viewing experience.",
+    "liveLike" : "https://yousefsayedd1.github.io/catMemePicker/",
+    "githubLink" : "https://github.com/yousefsayedd1/catMemePicker",
+    "categorys": ["All Projects", "HTML & CSS","JavaScript & API"]
+}]

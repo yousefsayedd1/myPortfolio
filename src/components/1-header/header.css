@@ -1,0 +1,139 @@
+/* 
+    ==============================
+            table of contents
+    ==============================
+
+    1. Header Design
+    2. Buttons & icons
+    3. Model == pop up
+    4. Responsive Design (media query)
+*/
+
+/* 
+    ==============================
+            Header Design
+    ==============================
+    =
+ */
+header.flex {
+    justify-content: space-between;
+    padding: 0 2em;
+    margin-top: 1.2em;
+}
+header.flex nav {
+    background-color: var(--bgHeader);
+    padding: .77em 1.6em;
+    border-radius: 55px;;
+    box-shadow: 1px 1px 1px rgba(53, 50, 50, 0.292);
+}
+header ul.flex {
+    gap: 16px;
+}
+header ul li a {
+    color: var(--title);
+    opacity: 0.9;
+    font-size: .88rem;
+    font-weight: 500;
+}
+header ul li a:hover {
+    color: var(--blue);
+    opacity: 1;
+    font-size: 0.9rem;
+}
+header button {
+    font-size: 1.2rem;
+}
+header.flex .menu {
+    display: none;
+}
+/* 
+    ==============================
+            Buttons & icons
+    ==============================
+    =
+ */
+header .icon-menu, header button.mode {
+    background-color: var(--bgHeader);
+    height: 2.4rem;
+    width: 2.4rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--subtitle);
+    border: 1px solid rgba(244, 165, 96, 0.249);
+    transition: .2s;
+}
+header .icon-menu:hover, header button.mode:hover {
+    color: var(--title);
+    border: 1px solid rgba(244, 165, 96);
+}
+header .icon-close {
+    font-size: 1.3rem;
+    color: var(--subtitle);
+    transition: .3s;
+}
+header .icon-close:hover {
+    font-size: 1.6rem;
+    color: crimson;
+    rotate: 180deg;
+}
+.icon-sun {
+    color: rgb(255, 166, 0);
+}
+/* 
+    ==============================
+            Model == pop up
+    ==============================
+    =
+ */
+header .fixed {
+    position: fixed;
+    inset: 0;
+    background-color: rgb(38,38,48,.9) ;
+}
+header .model  {
+    width: 85%;
+    flex-direction: column;
+    margin: 2em auto 0;
+    border-radius: 1rem;
+    padding: 1em 2em;
+    background-color: var(--secondary);
+    animation: fadeout .5s 1;
+}
+@keyframes fadeout {
+    0% {scale: 0;}
+    60% {scale : 1.1}
+    100%{scale : 1}
+}
+header .model li {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: .77em;
+    padding-top: .5em;
+}
+header .model li:last-child
+{
+    border: none;
+}
+header .model li a {
+    font-size: .88rem;
+}
+.fixed .model li:first-child {
+   text-align: right;
+   border: none;
+   padding: .2em 0  0  0;
+}
+/* 
+    =================================================
+            Responsive Design (media query)
+    =================================================
+    =
+ */
+@media (max-width: 747px) {
+    header.flex nav {
+        display: none;
+    }
+    header.flex .menu {
+        display: block;
+    }
+}

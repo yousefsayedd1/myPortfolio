@@ -1,0 +1,152 @@
+/* 
+    ==============================
+            table of contents
+    ==============================
+
+    1. Left Section == Buttons
+    2. Right Section == Cards
+    
+*/
+
+ main.flex {
+    gap: 3rem;
+    align-items: start;
+ }
+ /* 
+    ==============================
+            Left Section = Buttons
+    ==============================
+ */
+main.flex .left-section {
+    flex-direction: column;
+    gap: 10px;
+}
+main.flex .left-section button {
+    background-color: rgba(36,37, 46 ,1 );
+    width: 10rem;
+    padding: 0.7em 0;
+    text-align: center;
+    font-size: 1.05rem;
+    opacity: 0.5;
+    border-radius: 5px;
+
+}
+main.flex .left-section button.active { 
+    opacity: 1;
+    border: 1px solid var(--blue);
+    font-weight: bold;
+    letter-spacing: .6px;
+    padding: 0.8rem 0;
+}
+.light main.flex .left-section button.active {
+    border: 1px solid black;
+}
+main.flex .left-section button:hover {
+    transition: 0.3s;
+    opacity: 1;
+}
+ /* 
+    ==============================
+            Right Section == Cards
+    ==============================
+ */
+
+ main.flex .right-section {
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+
+ }
+
+main.flex .card {
+    width: 222px;
+    border: 1px solid rgba(93, 188, 252, 0.3);
+    box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 1px 1px 1px rgba(0,0,0,0.15);
+    transition: 0.3s;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.05);
+    animation: fadein 0.5s;
+}
+.light main.flex .card {
+    border: none;
+}
+@keyframes fadein {
+    0% {scale: 0;}
+    60% {scale : 1.2}
+    100% {scale : 1}
+}
+main.flex .card:hover {
+    border-color: var(--blue);
+    rotate: 1deg;
+    scale: 1.01;
+    cursor: pointer;
+}
+.light main.flex .card:hover {
+    border: none;
+
+}
+main.flex .card img {
+    width: 100%;
+    border-radius: 5px;
+    width: 220px;
+    height: 140px;
+    image-rendering: -webkit-optimize-contrast;
+}
+main.flex .card .description {
+    padding: 1em 0.4em;
+    width: 100%;
+}
+.card .description .title {
+    color: var(--title);
+    text-transform: capitalize;
+    font-size: initial;
+
+}
+.card .description .subtitle {
+    color: var(--subtitle);
+    font-size: 0.8rem;
+    margin-top: .7rem;
+    margin-bottom: 1.1rem;
+    line-height: 1.5;
+    height: 75px;
+}
+.card .description .icons {
+    justify-content: space-between;
+}
+.card .description .icons div.flex  {
+    gap: 11px;
+    height: 20px
+}
+
+.icons div.flex .icon {
+    font-size: 1.2rem;
+    color: var(--subtitle);
+}
+.icons div.flex .icon:hover {
+    font-size: 1.3rem;
+    color: var(--icon-hover);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.card .description .icons button.flex {
+    color: var(--blue);
+    font-size: .9rem;
+    margin-right: 12px;
+}
+
+.icons button.flex:hover {
+    font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    main.flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    main.flex .left-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
